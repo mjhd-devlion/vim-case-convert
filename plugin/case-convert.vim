@@ -36,10 +36,10 @@ function! CaseConvertFunc(conversion, skip_confirmation, start_line, end_line, s
     let search_for = '\%(\%(\k\+\)\)\@<=-\(\k\)'
     let replace_with = '\_\1'
   elseif a:conversion == "SnakeToCamel"
-    let search_for = '\%(\%(\k\+\)\)\@<=_\(\k\)'
+    let search_for = '\%(_\|\<\)\(\k\)'
     let replace_with = '\u\1'
   elseif a:conversion == "SnakeToHyphen"
-    let search_for = '\%(\%(\k\+\)\)\@<=_\(\k\)'
+    let search_for = '\%(_\|\<\)\(\k\)'
     let replace_with = '\-\1'
   endif
   
