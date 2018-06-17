@@ -1,3 +1,7 @@
+# This is a fork version
+This fork contains following modifications:
+- support convert from SnakeCase to UpperCamelCase
+
 **Vim-case-convert**  -  Update the case of your variables.
 ==================================
 Makes switching between camel case, snake case and hyphenated variables quick. Great for conforming legacy code bases or code written by a developer who ignored the standards to the desired case.
